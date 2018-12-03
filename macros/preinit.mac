@@ -1,0 +1,13 @@
+# verbose
+/run/verbose      0
+/tracking/verbose 0
+/control/verbose  0
+/event/verbose    0
+/material/verbose 0
+/process/verbose  0
+
+# seed
+/run/random/setRandomSeed 0
+
+# invoke the application
+/run/beamOn 100000

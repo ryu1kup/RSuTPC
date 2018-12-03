@@ -1,0 +1,13 @@
+returnNeutrons 0
+returnProtons 0
+returnGammas 0
+returnElectrons 0
+returnMuons 1
+returnPions 0
+returnKaons 0
+date 8-31-2018
+latitude 25.99
+altitude 0
+subboxLength 0.2
+nParticlesMin 1
+nParticlesMax 30
