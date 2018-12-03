@@ -13,9 +13,15 @@ $ ./run_RSuTPC.sh
 or specify the experiment setup and path to macro on your own as follows,
 ```
 $ cd bench
-$ ../bin/RSuTPC_G4p10 -s <setup> -p <preinit>
+$ ../bin/RSuTPC_G4p10 -s <setup> -p <preinit> -o <output>
 ```
-where `<setup>` is the experiment setup, `RSuTPC` or `WuTPC`, and `<preinit>` is the path to preinit macro such as `../macros/preinit.mac`.
+where `<setup>` is the experiment setup, `RSuTPC` or `WuTPC`, `<preinit>` is the path to preinit macro and `<output>` is the output filename.
+For example,
+```
+$ cd bench
+$ ../bin/RSuTPC_G4p10 -s RSuTPC -p ../macros/preinit.mac ../output/RSuTPC.root
+```
+In `bench` you can find two shell scripts to execute MC with standard options.
 
 # compilation
 ```
