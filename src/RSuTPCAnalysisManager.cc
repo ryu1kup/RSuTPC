@@ -14,9 +14,9 @@ RSuTPCAnalysisManager::~RSuTPCAnalysisManager(){
 }
 
 void RSuTPCAnalysisManager::BeginOfRun(const G4Run*){
-  m_otree->Branch("passed_upper", &m_fPassedUpper, "upper/O");
-  m_otree->Branch("passed_lower", &m_fPassedLower, "lower/O");
-  m_otree->Branch("total_edep",   &m_dTotalEdep,   "edep/D");
+  m_otree->Branch("upper", &m_fPassedUpper, "upper/O");
+  m_otree->Branch("lower", &m_fPassedLower, "lower/O");
+  m_otree->Branch("edep",  &m_dTotalEdep,   "edep/D");
 }
 
 void RSuTPCAnalysisManager::EndOfRun(const G4Run*){
